@@ -24,8 +24,9 @@ The script does not install dependencies, stop containers, modify Plex settings,
 ## Usage
 
 ```bash
-chmod +x plex-check.sh
-sudo ./plex-check.sh
+curl -fsSL https://raw.githubusercontent.com/trulow/plex2shell-check/main/plex-check.sh -o plex-check.sh
+bash -n plex-check.sh
+sudo bash plex-check.sh
 ```
 
 Run against Plex Pass release channel instead of public releases:
